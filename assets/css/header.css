@@ -48,31 +48,53 @@ header {
 	color: #EEE;
 }
 
+#home{
+	font-weight: bold;
+}
+
 select{
 	visibility: hidden;
 }
 
 @media (max-width: 1000px){
 	nav{
-		visibility: hidden;
+		display: none;
 	}
 
 	select{
 		visibility: visible;
+		display: block;
 		position: absolute;
-		bottom: 50px;
-		right: 40px;
-	}
-
-	header{
-		height: 130px;
+		bottom: 30px;
+		right: 5%;
+		height: 50px;
+		width: 200px;
+		background-color: #13b6eb;
+		color: white;
+		font-size: 22px;
 	}
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
 	select{
-		position: absolute;
-		bottom: 0;
-		left: 40px;
+		bottom: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+
+	header{
+		height: 180px;
+	}
+
+	.masterhead{
+		height: 200px;
+	}
+
+	header img{
+		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
 	}
 }
